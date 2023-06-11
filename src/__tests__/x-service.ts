@@ -1,4 +1,3 @@
-import * as dotenv from 'dotenv'
 import { ImmediatelyAPI } from '../plugin-immediately-api'
 import util from 'util'
 export const log = (...args: any[]) => {
@@ -17,9 +16,6 @@ jest.setTimeout(8000)
  * @returns [plugin, env, pool]
  */
 export function initializeLocalPlugin() {
-
-  dotenv.config()
-  const env = process.env as any
 
   const pool = ModPg.init(
     {
@@ -50,7 +46,6 @@ export function initializeLocalPlugin() {
 
   return {
     plugin,
-    env,
     pool,
     secure
   }
