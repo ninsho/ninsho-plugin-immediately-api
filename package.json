@@ -1,6 +1,6 @@
 {
   "name": "ninsho-plugin-immediately-api",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A plugin aggregating real-time APIs used on ninsho",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/ninsho/ninsho-plugin-immediately-api/",
   "dependencies": {
-    "ninsho-base": "^0.0.8",
+    "ninsho-base": "^0.0.9",
     "ninsho-utils": "^0.0.7"
   },
   "devDependencies": {
